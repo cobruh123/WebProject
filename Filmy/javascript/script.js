@@ -5,7 +5,6 @@ window.addEventListener('load', function(){
 	spinnerWrapper.style.display = 'none';
 });
 
-
 var audio = document.getElementById("myAudio");
 function playAudio() { 
    audio.paused ? audio.play() : audio.pause();
@@ -16,6 +15,26 @@ function change_text(){
     if (elem.innerText=="Play Music") elem.innerText = "Stop Music";
     else elem.innerText = "Play Music";
 }
+
+var success_button = document.getElementById("contact_button");
+var name = document.getElementById("contact_input_name_id");
+var email = document.getElementById("contact_input_email_id");
+var message = document.getElementById("contact_input_message_id");
+
+function successOutput(){
+	valid = true;
+	if(name.value == "" || email.value =="" || message.value == ""){
+		 alert ( "Please fill all boxes in the form" );
+        valid = false;
+	}else{
+		alert ("Thank you for filling a form!");
+	}
+	return valid;
+}
+
+
+
+	
 
 /* Send email */
 /*function sendMessage(){

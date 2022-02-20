@@ -5,12 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Filmy</title>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/secondpage.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image.png" href="assets/favicon.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css">
+	
 </head>
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-black">
   <div class="container-fluid">
@@ -32,15 +35,34 @@
 		<h1 class="gallery">Welcome to our Gallery!</h1>
 	</div>
 
+<!--Modal button-->
+<button id="modalBtn" class="btn btn-outline-dark">More Info</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>On this page you can see our photo works, which we love to share with our followers! You can also watch them on our instagram account, the link to which can be found at the end of the home page</p>
+  </div>
+
+</div>
+
 	<div class="grid_gallery">
-		<img class="grid_gallery_col-big grid_gallery_row-big" src="assets/7896.jpg">
-		<img src="assets/main3.jpg">
-		<img src="assets/1212.jpg">
-		<img class="grid_gallery_col-big" src="assets/filmy.jfif">
-		<img src="assets/main.jpg">
-		<img src="assets/DSC_0417.png">
-		<img src="assets/DSC_0119.jpg">
-		<img src="assets/DSC_0506.jpg">
+		 <a class="grid_gallery_col-big grid_gallery_row-big" data-lightbox="gall" href="assets/7896.jpg "><img  src="assets/7896.jpg"></a>
+		 <a href="assets/main3.jpg " data-lightbox="gall"><img src="assets/main3.jpg"></a>
+		 <a href="assets/1212.jpg " data-lightbox="gall"><img src="assets/1212.jpg"></a>
+		 <a class="grid_gallery_col-big" data-lightbox="gall" href="assets/filmy.jfif "><img  src="assets/filmy.jfif"></a>
+		  <a href="assets/main.jpg " data-lightbox="gall"><img src="assets/main.jpg"></a>
+		 <a href="assets/DSC_0417.png " data-lightbox="gall"><img src="assets/DSC_0417.png"></a>
+		 <a href="assets/DSC_0119.jpg " data-lightbox="gall"><img src="assets/DSC_0119.jpg"></a>
+		 <a href="assets/DSC_0506.jpg " data-lightbox="gall"><img src="assets/DSC_0506.jpg"></a>
 	</div>
+  
+  
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="javascript/projectsJS.js"></script>
+	<script type="text/javascript" src="javascript/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
